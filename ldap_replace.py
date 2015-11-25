@@ -24,12 +24,8 @@ for filename in os.listdir(path):
             for line in lines:
                 for (src, target) in replacements.iteritems():
                     if src in line:
-
                         # print line
-
                         line = line.replace(src, target)
-
                         # print line
-
                 sources.write(line)
 
